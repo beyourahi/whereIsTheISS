@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>data-api-practise</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        />
+
+        <style>
+            html {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            #content {
+                width: 100%;
+                height: 30vh;
+            }
+            #mapid {
+                width: 100%;
+                height: 70vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <h3>Where is the ISS?</h3>
+            <span>Longitude: <span class="lon"></span></span>° <br />
+            <span>Latitude: <span class="lat"></span></span>° <br />
+            <span>Velocity: <span class="vel"></span></span> mph
+        </div>
+
+        <div id="mapid"></div>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
